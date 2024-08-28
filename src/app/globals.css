@@ -26,8 +26,50 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.body-defaults {
+  @apply text-white;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+#photo-track > .photo {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-radius: 10%;
+}
+
+@keyframes bounce {
+  0% {
+    left: calc(100%-40vmin);
+  }
+  100% {
+    left: -200vmin;
+  }
+}
+
+#photo-track {
+  min-width: max-content;
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  /* animation: bounce 15s infinite alternate ease-in-out; */
 }

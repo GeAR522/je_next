@@ -1,33 +1,44 @@
+# README
+
+This is a project I am building, I am planning to make it an app about Jersey, the island I live on and love.
+
+The current TODO list:
+
+- Finish connecting up the login logout registration stuff
+
+- Add in the comment form and components
+
+- Finish adjusting the devise_jwt to add in refresh tokens and not just access tokens.
+
+- add a salt to the set up of passwords
+
+- Write a better summary/ReadME
+
+## Main Goal
+
+My eventual aim with this webapp will be to have an sections dedicated to the 12 parishes and things to do/see in them, as well as a general tourism section to help people plan holidays and things to do here in Jersey.
+
+This will be done by showing off images, links to businesses, descriptions, and eventually some review sections.
+
+## A Side Quest
+
+Add some information about current housing prices, income, etc. Jersey is nice, but it's not all good and I think this is a serious issue.
+
+## Future Plan
+
+I want to learn more about threejs as I would love to build interative models as a way to help people navigate websites in new and interesting ways. I also want to learn more about D3js to show data/information in more interesting and interactive ways to help people better connect with trends and data-driven decisions.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+I run the deverlopment server on port 3001 as my rails will run on 3000
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+npx next dev -p 3001
+```
 
 ## Deploy on Vercel
 
